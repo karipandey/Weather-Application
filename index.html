@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+       <link rel="stylesheet" href="style.css">
+       
+    </head>
+    <body>
+       <div class="container">
+            <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter your location" id="inputBox"></input>
+            
+               <button class="searchBtn">
+                <img itemprop="contentUrl" src="https://www.svgrepo.com/show/532555/search.svg" alt="Search SVG File" title="Search SVG File" width="15" height="15">
+               </button>
+           </div>
+           </div>
+        <!--this is a weather body-->
+        <div class="weather-body">
+            <!--this is a cloud image and description-->
+            <div class="weather-image">
+            <img alt="Clouds And Sun PNG Transparent Images Free Download | Vector ..." id="dimg_3-6hZ6D0E--nseMPnLmByAY_15" src="data:image/png;base64,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" data-csiid="3-6hZ6D0E--nseMPnLmByAY_3" data-atf="1">
+           </div>
+            <div class="weather-box">
+            <p class="temperature">0 <sup> °C</sup></p>
+            <p class="description">light rain></p>
+           </div>
+          
+<!--this is a humidity and windy details-->
+    <div class="humid_wind">
+         <!--this is a humidity details-->
+        <div class="humidity">
+            <div class="humid">
+             <svg xmlns="http://www.w3.org/2000/svg" fill="black" width="40px" height="40px" viewBox="0 0 32 32" id="icon">
+              <defs>
+              <style>
+              .cls-1 {
+                fill: none;
+                 }
+                  </style>
+                </defs>
+                 <title>humidity</title>
+               <path d="M23.4761,13.9932,16.8472,3.4365a1.04,1.04,0,0,0-1.6944,0L8.4941,14.0444A9.9861,9.9861,0,0,0,7,19a9,9,0,0,0,18,0A10.0632,10.0632,0,0,0,23.4761,13.9932ZM16,26.0005a7.0089,7.0089,0,0,1-7-7,7.978,7.978,0,0,1,1.2183-3.9438l.935-1.4888L21.2271,23.6411A6.9772,6.9772,0,0,1,16,26.0005Z"/>
+                <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
+                 </svg>
+            </div>
+            <div>
+                <span class="text-tem">45%</span>
+                <p class="text-des">Humidity</p>
+            </div>
+        </div>
+
+           <!---->
+           <!--this is a wind details-->
+         <div class="windy">
+            <div class="wind">
+           <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24" fill="black">
+             <path fill-rule="evenodd" clip-rule="evenodd" d="M6.25 5.5C6.25 3.70508 7.70507 2.25 9.5 2.25C11.2949 2.25 12.75 3.70507 12.75 5.5C12.75 7.29493 11.2949 8.75 9.5 8.75H3C2.58579 8.75 2.25 8.41421 2.25 8C2.25 7.58579 2.58579 7.25 3 7.25H9.5C10.4665 7.25 11.25 6.4665 11.25 5.5C11.25 4.5335 10.4665 3.75 9.5 3.75C8.5335 3.75 7.75 4.5335 7.75 5.5V5.85714C7.75 6.27136 7.41421 6.60714 7 6.60714C6.58579 6.60714 6.25 6.27136 6.25 5.85714V5.5ZM14.25 7.5C14.25 5.15279 16.1528 3.25 18.5 3.25C20.8472 3.25 22.75 5.15279 22.75 7.5C22.75 9.84721 20.8472 11.75 18.5 11.75H2C1.58579 11.75 1.25 11.4142 1.25 11C1.25 10.5858 1.58579 10.25 2 10.25H18.5C20.0188 10.25 21.25 9.01878 21.25 7.5C21.25 5.98122 20.0188 4.75 18.5 4.75C16.9812 4.75 15.75 5.98122 15.75 7.5V8C15.75 8.41421 15.4142 8.75 15 8.75C14.5858 8.75 14.25 8.41421 14.25 8V7.5ZM3.25 14C3.25 13.5858 3.58579 13.25 4 13.25H18.5C20.8472 13.25 22.75 15.1528 22.75 17.5C22.75 19.8472 20.8472 21.75 18.5 21.75C16.1528 21.75 14.25 19.8472 14.25 17.5V17C14.25 16.5858 14.5858 16.25 15 16.25C15.4142 16.25 15.75 16.5858 15.75 17V17.5C15.75 19.0188 16.9812 20.25 18.5 20.25C20.0188 20.25 21.25 19.0188 21.25 17.5C21.25 15.9812 20.0188 14.75 18.5 14.75H4C3.58579 14.75 3.25 14.4142 3.25 14Z" fill="#1C274C"/>
+                  </svg>
+            </div>
+            <div>
+                <span class="text-tem">12 km/h</span>
+                <p class="text-des"> Wind Speed</p>
+            </div>
+
+           </div>
+         </div>
+         <!----->
+
+         </div>
+        </div>
+    </body>
+        <script src="weather.js"></script>
+
+</html>
